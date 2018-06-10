@@ -24,6 +24,11 @@ $ mix deps.get
 ```
 
 ## Usage
+Add MIME type to router `accepts` plug.
+```elixir
+plug(:accepts, ["html", "js"])
+```
+
 Set `data-remote="true"` on forms.
 ```html
   <%= form_for @changeset, @action, [data: [remote: true]], fn f -> %>
